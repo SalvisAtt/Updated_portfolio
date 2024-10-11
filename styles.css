@@ -105,27 +105,36 @@ main{
     justify-content: center;
     width: 100%;
     height: 120vh;
+    background-color: white !important;
+
 }
 .context{
     width: 50%;
     height:inherit;
-    background-color: inherit;
 }
-
-.Code1{
+.text{
+    font-size: 30px;
+}
+.Code1  {
     display: flex;
-
+}
+.Code1 h3{
+    font-size: 23px;
+    background: linear-gradient(to right, green , blue , red, blue);
+    -webkit-background-clip: text; /* Clip the background to the text */
+    -webkit-text-fill-color: transparent; /* Make the text transparent to show the background */
+    background-clip: text; /* Standard background clip (for modern browsers) */
+    color: transparent; /* Ensure text color is transparent */
 }
 .img1{
     width: 50%;
     height:300px;
-    background-color: rgb(54, 66, 66);
-    background-image: url('html.png');
+    background-color:inherit;
+    background-image: url('HTML.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     transition: transform 2s ease-in-out ;
-    border-radius: 30%;
 }
 .img1:hover{
     scale:1.05;
@@ -136,20 +145,17 @@ main{
 .text{
     width: 50%;
     height:300px;
-    background-color: inherit;
     padding: 0 35px 0 35px;
 }
 
 .img2{
     width: 50%;
-    height:320px;
-    background-color: rgb(54, 66, 66);
-    background-image: url('java.svg');
+    height:400px;
+    background-image: url('jaaava.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     transition: transform 2s ease-in-out ;
-    border-radius: 30%;
 }
 .img2:hover{
     scale:1.05;
@@ -159,14 +165,12 @@ main{
 
 .img3{
     width: 50%;
-    height:300px;
-    background-color: rgb(54, 66, 66);
-    background-image: url('python-image.svg');
+    height:400px;
+    background-image: url('Python.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     transition: transform 2s ease-in-out ;
-    border-radius: 10%;
 }
 .img3:hover{
     scale:1.05;
@@ -177,12 +181,73 @@ main{
 /* footer */
 #footer { 
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     position: relative;
     bottom: 0;
     width: 100%;
-    height: 3rem;      
-    background-color: blue;
+    height: 12rem;      
+    background-color: black;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Left section: Let's get some goals done */
+.Lets {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 50%;
+    height: inherit;
+    background-color: inherit;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.Lets h1 {
     color: white;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.Lets p {
+    color: white;
+    margin: 5px 0;
+    text-decoration: underline;
+}
+
+/* Right section */
+.home {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    width: 50%;
+    height: inherit;
+    background-color: inherit;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.home h1 {
+    font-size: 40px;
+    background: linear-gradient(to right, green, blue);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    text-align: center;
+}
+
+/* General footer styles for responsive design */
+@media (max-width: 768px) {
+    #footer {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .Lets, .home {
+        width: 100%;
+        text-align: center;
+    }
 }
