@@ -261,7 +261,10 @@ main {
     color: transparent;
     text-align: center;
 }
-
+.home:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
 /* General footer styles for responsive design */
 @media (max-width: 768px) {
     #footer {
