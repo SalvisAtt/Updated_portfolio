@@ -1,35 +1,39 @@
-body{
+body {
     margin: 0;
-    /*Animated background*/
-    background: linear-gradient(45deg,#d2001a,#7462ff,#f48e21,#23d5ab);
+    /* Animated background */
+    background: linear-gradient(45deg, #d2001a, #7462ff, #f48e21, #23d5ab);
     background-size: 300% 300%;
     animation: color 12s ease-in-out infinite;
 }
-body .learning{
+
+body .learning {
     background-color: white;
 }
+
 /* header */
-.header{
+.header {
     height: 100px;
     display: flex;
     position: sticky;
-    top:0;
+    top: 0;
 }
-.header .home{
+
+.header .home {
     display: flex;
     width: 50%;
     justify-content: start;
     align-items: center;
     background-color: transparent;
 }
-.home{
+
+.home {
     padding: 0 0 0 20px;
-    /* Changed text color to white for visibility */
     color: white; 
     font-family: monospace;
     font-size: 30px;
 }
-.options{
+
+.options {
     background-color: transparent;
     display: flex;
     justify-content: end;
@@ -37,9 +41,14 @@ body .learning{
     width: 50%;
     padding: 0 20px 0 0;
 }
-/* main */
 
-main{
+ul:hover{
+    text-decoration: underline;
+    color:white;
+    cursor: pointer;
+}
+/* main */
+main {
     height: 80vh;
     width: 100%;
     position: relative;
@@ -49,144 +58,158 @@ main{
     justify-content: center;
     align-items: center;
 }
-@keyframes color{
-    0%{
+
+@keyframes color {
+    0% {
         background-position: 0 25%;
     }
-    50%{
+    50% {
         background-position: 100% 50%;
     }
-    100%{
+    100% {
         background-position: 0 50%;
     }
 }
 
-.Content{
-    background-color:transparent;
+.Content {
+    background-color: transparent;
     width: 80%;
-    height:60%;
+    height: 60%;
 }
-.Content h1{
+
+.Content h1 {
     font-size: 60px;
-    background: linear-gradient(to right, green , blue);
-    -webkit-background-clip: text; /* Clip the background to the text */
-    -webkit-text-fill-color: transparent; /* Make the text transparent to show the background */
-    background-clip: text; /* Standard background clip (for modern browsers) */
-    color: transparent; /* Ensure text color is transparent */
+    background: linear-gradient(to right, green, blue);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
 }
-.Content .main_text{
+
+.Content .main_text {
     font-size: 40px;
     color: rgb(27, 25, 25);
 }
-.undertext{
-    display:flex;
+
+.undertext {
+    display: flex;
     justify-content: center;
 }
-.study{
+
+.study {
     display: flex;
     flex-direction: column;
     width: 50%;
     height: 32vh;
-    background-color:transparent;
+    background-color: transparent;
     justify-content: center;
     align-items: center;
 }
-.drive{
-    display:flex;
+
+.drive {
+    display: flex;
     flex-direction: column;
     width: 50%;
     background-color: transparent;
     justify-content: center;
     align-items: center;
 }
+
 /* Main learning */
-.learning{
+.learning {
     display: flex;
     justify-content: center;
     width: 100%;
     height: 120vh;
     background-color: white !important;
+}
 
-}
-.context{
+.context {
     width: 50%;
-    height:inherit;
+    height: inherit;
 }
-.text{
+
+.text {
     font-size: 30px;
 }
-.Code1  {
+
+.Code1 {
     display: flex;
 }
-.Code1 h3{
+
+.Code1 h3 {
     font-size: 23px;
-    background: linear-gradient(to right, green , blue , red, blue);
-    -webkit-background-clip: text; /* Clip the background to the text */
-    -webkit-text-fill-color: transparent; /* Make the text transparent to show the background */
-    background-clip: text; /* Standard background clip (for modern browsers) */
-    color: transparent; /* Ensure text color is transparent */
+    background: linear-gradient(to right, green, blue, red, blue);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
 }
-.img1{
+
+.img1 {
     width: 50%;
-    height:300px;
-    background-color:inherit;
+    height: 300px;
+    background-color: inherit;
     background-image: url('HTML.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    transition: transform 2s ease-in-out ;
+    transition: transform 2s ease-in-out;
 }
-.img1:hover{
-    scale:1.05;
+
+.img1:hover {
+    scale: 1.05;
     cursor: pointer;
     transform: scale(1.1);
 }
 
-.text{
+.text {
     width: 50%;
-    height:300px;
+    height: 300px;
     padding: 0 35px 0 35px;
 }
 
-.img2{
+.img2 {
     width: 50%;
-    height:400px;
+    height: 400px;
     background-image: url('jaaava.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    transition: transform 2s ease-in-out ;
+    transition: transform 2s ease-in-out;
 }
-.img2:hover{
-    scale:1.05;
+
+.img2:hover {
+    scale: 1.05;
     cursor: pointer;
     transform: scale(1.1);
 }
 
-.img3{
+.img3 {
     width: 50%;
-    height:400px;
+    height: 400px;
     background-image: url('Python.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    transition: transform 2s ease-in-out ;
+    transition: transform 2s ease-in-out;
 }
-.img3:hover{
-    scale:1.05;
+
+.img3:hover {
+    scale: 1.05;
     cursor: pointer;
     transform: scale(1.1);
 }
 
 /* footer */
-#footer { 
+#footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: relative;
     bottom: 0;
     width: 100%;
-    height: 12rem;      
+    height: 12rem;
     background-color: black;
     padding: 20px;
     box-sizing: border-box;
