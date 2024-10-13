@@ -8,7 +8,7 @@ document.getElementById('home').addEventListener('click', function() {
     navigateToPage('index.html');
 });
 document.getElementById('projects').addEventListener('click', function() {
-    navigateToPage('projects.html');
+    navigateToPage('project.html');
 });
 document.getElementById('about').addEventListener('click', function() {
     navigateToPage('about.html');
@@ -21,11 +21,11 @@ document.getElementById('about1').addEventListener('click', function() {
 });
 
 document.getElementById('projects1').addEventListener('click', function() {
-    navigateToPage('projects.html');
+    navigateToPage('project.html');
 });
 document.getElementById('projects2').addEventListener('click', function() {
-    navigateToPage('projects.html');
+    navigateToPage('project.html');
 });
 document.getElementById('projects3').addEventListener('click', function() {
-    navigateToPage('projects.html');
+    navigateToPage('project.html');
 });
